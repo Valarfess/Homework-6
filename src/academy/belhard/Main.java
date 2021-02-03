@@ -7,7 +7,6 @@ public class Main {
         car.printInfo();
         car.price();
 
-
         System.out.println();
 
         Motorcycle moto = new Motorcycle(2, 290);
