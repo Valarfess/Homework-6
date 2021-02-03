@@ -14,6 +14,7 @@ package academy.belhard;
 
         @Override
         public void price() {
+            System.out.println("Цена: $6000");
 
         }
     }
