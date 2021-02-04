@@ -2,20 +2,13 @@ package academy.belhard;
 
     public class Car extends Vehicle implements Costable{
         private int doorsCount;
-        private int a;
 
-        public int getA() {
-            return a;
-        }
 
-        public int setA(int a) {
-            this.a = a;
-            return a;
-        }
 
-        protected Car(int wheelCount, int doorsCount) {
-            super(wheelCount);
+        protected Car(int wheelCount, int doorsCount, int price) {
+            super(wheelCount, price);
             this.doorsCount = doorsCount;
+
         }
 
         protected void printInfo() {
@@ -24,8 +17,7 @@ package academy.belhard;
 
         @Override
         public int price() {
-            System.out.println(setA(6000));
-            return getA();
+            return price;
         }
     }
 

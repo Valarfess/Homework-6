@@ -2,19 +2,9 @@ package academy.belhard;
 
     public class Motorcycle extends Vehicle implements Costable{
         private int maxSpeed;
-        private int b;
 
-        public int getB() {
-            return b;
-        }
-
-        public int setB(int b) {
-            this.b = b;
-            return b;
-        }
-
-        protected Motorcycle(int wheelCount, int maxSpeed) {
-            super(wheelCount);
+        protected Motorcycle(int wheelCount, int maxSpeed, int price) {
+            super(wheelCount, price);
             this.maxSpeed = maxSpeed;
         }
 
@@ -24,8 +14,6 @@ package academy.belhard;
 
         @Override
         public int price() {
-            System.out.println(setB(2000));
-            return getB();
-
+            return price;
         }
     }
